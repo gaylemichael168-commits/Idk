@@ -1,0 +1,16 @@
+name: NpcQueue
+version: ${project.version}
+main: dev.queue.QueuePlugin
+api-version: '1.21'
+description: Click an NPC to join a queue that sends you to another server through Velocity.
+commands:
+  queue:
+    description: Manage and use queues
+    usage: /queue [join|leave|position|open|close|pause|resume|setserver|reload|linknpc|unlinknpc]
+permissions:
+  queue.use:
+    description: Join, leave and view queues
+    default: true
+  queue.admin:
+    description: Manage queues
+    default: op

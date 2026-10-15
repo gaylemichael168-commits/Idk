@@ -1,0 +1,25 @@
+# NpcQueue configuration.
+# Note: commands like /queue open or /queue setserver rewrite this file,
+# so any comments you add may be removed.
+
+settings:
+  # How often (in seconds) the plugin checks the destination server
+  # and sends the next player(s) in line.
+  check-interval-seconds: 5
+
+# Each queue needs:
+#   server:      the server name EXACTLY as written in velocity.toml
+#   max-players: the destination server is considered full at this many players
+#   open:        true = new players can join, false = nobody new can join
+#   paused:      true = nobody is sent, but players keep their place in line
+queues:
+  survival:
+    server: smp
+    max-players: 50
+    open: true
+    paused: false
+  creative:
+    server: creative
+    max-players: 30
+    open: true
+    paused: false
